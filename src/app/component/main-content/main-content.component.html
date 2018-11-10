@@ -1,14 +1,20 @@
 <div class="main-content" flexLayout="row" fxLayoutAlign="center center">
-  <div class="main-content__left" fxFlex="15" flexLayout="column">
+  <div class="main-content__left" fxFlex="13" flexLayout="column">
     <div *ngFor = "let image of CONTENT" class="main-content__left__image">
-      <img src="{{image.src}}" alt="">
+      <img src="{{image.src}}" alt="" (click)="onPressImage(image)">
     </div>
   </div>
-  <div>
-    xxx
+ 
+  <div class="main-content__right" fxFlex="75">
+      <ngx-carousel
+        [inputs]="carouselOne"
+        (carouselLoad)="myfunc($event)" 
+        [moveToSlide]="imageId">
+            <ngx-item NgxCarouselItem *ngFor = "let image of CONTENT">
+                <img src="{{image.src}}" alt="">
+            </ngx-item>
+          <button NgxCarouselPrev class='leftRs'>&lt;</button>
+          <button NgxCarouselNext class='rightRs'>&gt;</button>
+    </ngx-carousel>
   </div>
-  <div class="main-content__right">
-      <img src="{{CONTENT[0].src}}" alt="">
-  </div>
-    <div>xxx</div>
 </div>

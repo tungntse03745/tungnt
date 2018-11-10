@@ -8,6 +8,8 @@ import { RightContentComponent } from './component/right-content/right-content.c
 import { MainContentComponent } from './component/main-content/main-content.component';
 import { FooterComponent } from './component/footer/footer.component';
 import {MatSelectModule} from '@angular/material/select';
+import { NgxCarouselModule } from 'ngx-carousel';
+import 'hammerjs';
 
 const COMPONENT = [
   HeaderComponent,
@@ -19,7 +21,8 @@ const MODULE = [
   BrowserModule,
   FlexLayoutModule,
   BrowserAnimationsModule,
-  MatSelectModule
+  MatSelectModule,
+  NgxCarouselModule
 ]
 @NgModule({
   declarations: [

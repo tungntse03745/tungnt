@@ -1,0 +1,13 @@
+.right-content {
+    .right-content__download {
+        background-color: orange;
+        color: white;
+        cursor: pointer;
+        margin: 10px 15px;
+        padding: 10px;
+        text-align: center;
+    }
+}
+.right-content__download:active {
+    background-color: white;
+}
