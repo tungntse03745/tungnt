@@ -1,13 +1,25 @@
 .right-content {
     .right-content__download {
-        background-color: orange;
+        background-color: #fda737;
         color: white;
         cursor: pointer;
         margin: 10px 15px;
         padding: 10px;
         text-align: center;
     }
-}
-.right-content__download:active {
-    background-color: white;
+    .right-content__download:hover {
+        background-color: orange;
+    }
+    .right-content__download:active {
+        background-color: gray;
+    }
+    .right-content__option{
+        background-color: gray;
+        .right-content__option-btn {
+            background-color: #fda737;
+            color: white;
+            padding: 3px;
+            margin: 0xp 3px;
+        }
+    }
 }

@@ -1,10 +1,15 @@
 <div class="right-content">
-  <div class="right-content__download">
-      <span>icon</span>
-      <span>Free Download</span>
+  <div class="right-content__download" (click)="onPressDownload()" flexLayout="row" fxLayoutAlign="center center">
+      <img src="{{image.DOWNLOAD}}" alt="" fxFlex="15px">
+      <div>Free Download</div>
   </div>
-  <div class="right-content__option">
-      
+  <div class="right-content__option" flexLayout="row" fxLayoutAlign="center center">
+      <mat-radio-button></mat-radio-button>
+      <span class="right-content__option-btn">PSD</span>
+      <span class="right-content__option-btn">PNG</span>
+      <span class="right-content__option-btn">JPEG</span>
+      <span>33MB</span>
+      <span>FREE</span>
   </div>
   <div class="right-content__description">
 

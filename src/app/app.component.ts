@@ -8,9 +8,13 @@ import { ENGLISH } from './component/shared/en';
 })
 export class AppComponent implements OnInit {
   language: any;
+  current: any;
   ngOnInit() {
     this.language = ENGLISH;
-    console.log('language', this.language);
-    
+  }
+  currentSlide(event) {
+    setTimeout(() => {
+      this.current = event;
+    }, 1);
   }
 }

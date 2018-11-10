@@ -1,5 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { NgxCarousel } from 'ngx-carousel';
+import { IMAGE } from '../shared/image.constants';
+import { SLIDES } from '../shared/slides.constants';
 
 @Component({
   selector: 'app-main-content',
@@ -7,34 +9,10 @@ import { NgxCarousel } from 'ngx-carousel';
   styleUrls: ['./main-content.component.scss']
 })
 export class MainContentComponent implements OnInit {
-  CONTENT = [
-    {
-      id: 1,
-      name: 'image 1',
-      src: '../assets/image/300x250.jpg'
-    },
-    {
-      id: 2,
-      name: 'image 2',
-      src: '../assets/image/300x600.jpg'
-    },
-    {
-      id: 3,
-      name: 'image 3',
-      src: '../assets/image/320x100.jpg'
-    },
-    {
-      id: 4,
-      name: 'image 4',
-      src: '../assets/image/336x280.jpg'
-    },
-    {
-      id: 5,
-      name: 'image 5',
-      src: '../assets/image/728x90.jpg'
-    }
-  ]
+  @Output('currentSlide') _currentSlide: EventEmitter<any> = new EventEmitter();
+  slides = SLIDES;
   imageId: number;
+  image_icon = IMAGE;
   public carouselOne: NgxCarousel;
   constructor() { }
   ngOnInit() {
@@ -47,17 +25,17 @@ export class MainContentComponent implements OnInit {
         visible: false
       },
       load: 2,
-      touch: true,
+      touch: false,
       loop: true,
       custom: 'banner'
     }
   }
-  myfunc(event) {
-    console.log('xx', event);
-    
-  }
   onPressImage(event) {
-    console.log(event);
     this.imageId = event.id - 1;
   };
+  onmoveFn(event) {
+    console.log('xx', event);
+    
+    this._currentSlide.emit(event.currentSlide)
+  }
 }

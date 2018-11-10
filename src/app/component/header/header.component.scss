@@ -5,4 +5,18 @@
             width: 100%;
         }
     }
+    .header__menu {
+        .header__menu-content{
+            a {
+                padding: 5px 5px;
+                cursor: pointer;
+            }
+            a:hover {
+                opacity: 0.5;
+            }
+            a:active {
+                filter: brightness(30%);
+             }
+        }
+    }
 }

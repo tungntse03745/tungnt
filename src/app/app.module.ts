@@ -9,7 +9,13 @@ import { MainContentComponent } from './component/main-content/main-content.comp
 import { FooterComponent } from './component/footer/footer.component';
 import {MatSelectModule} from '@angular/material/select';
 import { NgxCarouselModule } from 'ngx-carousel';
+import {MatIconModule} from '@angular/material/icon';
+import {MatDialogModule} from '@angular/material/dialog';
 import 'hammerjs';
+import { DownloadImageDialogComponent } from './component/right-content/component/download-image-dialog/download-image-dialog.component';
+import {NoopAnimationsModule} from '@angular/platform-browser/animations';
+import {MatRadioModule} from '@angular/material/radio';
+import {MatCheckboxModule} from '@angular/material/checkbox';
 
 const COMPONENT = [
   HeaderComponent,
@@ -22,17 +28,24 @@ const MODULE = [
   FlexLayoutModule,
   BrowserAnimationsModule,
   MatSelectModule,
-  NgxCarouselModule
+  NgxCarouselModule,
+  MatIconModule,
+  MatDialogModule,
+  NoopAnimationsModule,
+  MatRadioModule,
+  MatCheckboxModule
 ]
 @NgModule({
   declarations: [
     AppComponent,
     ...COMPONENT,
+    DownloadImageDialogComponent,
   ],
   imports: [
     ...MODULE
   ],
   providers: [],
+  entryComponents: [DownloadImageDialogComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

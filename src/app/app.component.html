@@ -3,11 +3,11 @@
    <app-header [language]= "language"></app-header>
   </div>
   <div class="app__content" flexLayout="row">
-      <div class="app__content-main" fxFlex ="70">
-        <app-main-content ></app-main-content>
+      <div class="app__content-main" fxFlex ="75">
+        <app-main-content (currentSlide)="currentSlide($event)"></app-main-content>
       </div>
-      <div class="app__content-right" fxFlex ="30">
-        <app-right-content ></app-right-content>
+      <div class="app__content-right" fxFlex ="25">
+        <app-right-content [currentSlides]="current"></app-right-content>
       </div>
   </div>
     <div class="app__footer">

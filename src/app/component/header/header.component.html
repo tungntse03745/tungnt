@@ -3,22 +3,23 @@
     <img src="{{logo}}" alt="" class="header__logo-img">
   </div>
   <div fxFlex fxGrow="1"></div>
-  <div class="header__menu" fxFlex="30%">
+  <div class="header__menu" fxFlex="35%">
     <div class="header__menu-content" flexLayout="row">
-      <div fxFlex="50px">{{language.VECTOR}}</div>
-      <div fxFlex="50px">{{language.PHOTO}}</div>
-        <div class="header__menu-content-language" fxFlex="100px">
-            <!-- <mat-select >
+      <a>{{language.VECTOR}}</a>
+      <a>{{language.PHOTO}}</a>
+      <a class="header__menu-content-language">
+
+        <!-- <mat-select [(value)]="langs[0]">
               <mat-option *ngFor="let lang of langs" [value]="lang.id">
                 {{ lang.value }}
               </mat-option>
             </mat-select> -->
-            <select>
-              <option *ngFor="let lang of langs" [value]="lang.id"> {{ lang.value }}</option>
-            </select>
-        </div>
-      <div fxFlex="50px">{{language.LOGIN}}</div>
-      <div fxFlex="50px">{{language.SIGNUP}}</div>
+        <select>
+          <option *ngFor="let lang of langs" [value]="lang.id"> {{ lang.value }}</option>
+        </select>
+      </a>
+      <a>{{language.LOGIN}}</a>
+      <a>{{language.SIGNUP}}</a>
     </div>
   </div>
 </div>
