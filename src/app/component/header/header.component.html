@@ -1,0 +1,24 @@
+<div class="header" flexLayout="row" fxLayoutAlign="center center">
+  <div class="header__logo" fxFlex="50px">
+    <img src="{{logo}}" alt="" class="header__logo-img">
+  </div>
+  <div fxFlex fxGrow="1"></div>
+  <div class="header__menu" fxFlex="30%">
+    <div class="header__menu-content" flexLayout="row">
+      <div fxFlex="50px">{{language.VECTOR}}</div>
+      <div fxFlex="50px">{{language.PHOTO}}</div>
+        <div class="header__menu-content-language" fxFlex="100px">
+            <!-- <mat-select >
+              <mat-option *ngFor="let lang of langs" [value]="lang.id">
+                {{ lang.value }}
+              </mat-option>
+            </mat-select> -->
+            <select>
+              <option *ngFor="let lang of langs" [value]="lang.id"> {{ lang.value }}</option>
+            </select>
+        </div>
+      <div fxFlex="50px">{{language.LOGIN}}</div>
+      <div fxFlex="50px">{{language.SIGNUP}}</div>
+    </div>
+  </div>
+</div>

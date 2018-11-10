@@ -1,0 +1,17 @@
+.main-content {
+    padding: 20px;
+    .main-content__left {
+        .main-content__left__image {
+            img {
+                width: 100%;
+                margin: 3px 0px;
+            }
+        }
+    }
+    .main-content__right {
+        img {
+            width: 100%;
+            padding: 5px;
+        }
+    }
+}

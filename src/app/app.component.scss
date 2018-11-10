@@ -1,0 +1,24 @@
+.app {
+    width: 100%;
+    .app__header {
+      width: 100%;
+      background-color: #3e3e3f;
+      color: white;
+      padding: 3px 0px;
+    }
+    .app__content {
+        width: 100%;
+        background-color: #f2f3f4;
+        .app__content-main {
+            background-color: #ffff;
+            width: 100%;
+            margin: 20px 20px;
+        }
+        .app__content-right {
+            width: 100%;
+        }
+    }
+    .app__footer {
+      background-color: #3e3e3f;
+    }
+}
