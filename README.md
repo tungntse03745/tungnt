@@ -1,27 +1,41 @@
-# Angular11
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.3.
+## How to run product
 
-## Development server
+## Step 1: 
+Setup angular (npm install -g @angular/cli)
+## Step 2:
+Setup node_module (ng s)
+## Step 2:
+Goto http://localhost:4200/
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Deploy to github
 
-## Code scaffolding
+## Step 1: install the angular-cli-ghpages globally:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+$ npm install -g angular-cli-ghpages
 
-## Build
+## Step 2: Use the Angular CLI with the --base-href flag to build your project and set the base href location:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+$ ng build --prod --base-href "https:tungntse03745.github.io/tungnt/"
 
-## Running unit tests
+## Step 3: Running angular-cli-ghpages. You can use the ngh shorthand:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+$ ngh
 
-## Running end-to-end tests
+## ---------
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+## Project Information
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## Technical
+- Angular 5.2.11
+- Javascript ES6/Typescript, HTML5, CSS3
+- Library: Angular material, ngx-carousel
+## General Requirements
+- responsive in multiple screen sizes: Desktop, Ipad, Ipad Pro, Iphone 6/6s, Iphone 7/7s, Iphone8, IphoneX
+- Change Language: VietNamese, English, Japanese
+- Use carousel slider ('https://libraries.io/npm/ngx-carousel')
+- Slider auto play, When clicking a thumbnail on the left, the image of selected thumbnail will be shown.
+- When click to FREE DOWNLOAD => display current image in slider => click to download to download this image.
+- With Desktop screen. When scrolling, the right section is fixed.
+- Design a simple footer.
+- Using Json Data in Share folder.
