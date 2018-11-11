@@ -21,7 +21,6 @@ export class AppComponent implements OnInit {
     }, 1);
   }
   currentLanguage(event) {
-    console.log('ev', event);
     switch (event) {
       case LANGS[0].id:
         this.language = ENGLISH;
