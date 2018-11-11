@@ -3,9 +3,10 @@
         background-color: #fda737;
         color: white;
         cursor: pointer;
-        margin: 10px 15px;
+        margin: 10px 0px;
         padding: 10px;
         text-align: center;
+        border-radius: 2px;
     }
     .right-content__download:hover {
         background-color: orange;
@@ -14,12 +15,76 @@
         background-color: gray;
     }
     .right-content__option{
-        background-color: gray;
+        background-color: #e6e7e9;
+        /deep/ .mat-radio-inner-circle {
+            background-color: #fda737;
+        }
+        /deep/ .mat-radio-outer-circle {
+            border-color: #fda737;
+        }
         .right-content__option-btn {
+            cursor: pointer;
             background-color: #fda737;
             color: white;
             padding: 3px;
-            margin: 0xp 3px;
+            border-radius: 2px;
+        }
+        .right-content__option-btn:hover {
+            opacity: 0.5;
+        }
+        .right-content__option-btn:active {
+            filter:brightness(30%);
+        }
+        span {
+            margin-right: 5px;
+        }
+        .right-content__option-btn-free {
+            color: green;
+            font-weight: bold;
         }
     }
+ 
+    .right-content__action {
+        margin: 10px 0px;
+        text-align: center;
+        .right-content__action-favourite, .right-content__action-share {
+            background-color: #ffff;
+            border-radius: 2px;
+            border: 1px solid #fda737;
+            padding: 5px 0px;
+            cursor: pointer;
+            mat-icon {
+                font-size: 21px;
+                color: #fda737;
+            }
+        }
+        .right-content__action-favourite:active {
+            filter:brightness(30%);
+        }
+        .right-content__action-share:active {
+            filter:brightness(30%);
+        }
+        .right-content__action-favourite:hover {
+            opacity: 0.5;
+        }
+        .right-content__action-share:hover {
+            opacity: 0.5;
+        }
+        
+    }
+    .right-content__description {
+        background: #ffff;
+        padding: 10px;
+        .right-content__description-title {
+            border-right: 1px solid gray;
+            img {
+                opacity: 0.5;
+            }
+        }
+        .right-content__description-content {
+            margin-left: 10px;
+        }
+    }
+  
+
 }

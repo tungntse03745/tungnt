@@ -1,0 +1,30 @@
+.footer {
+    color: white;
+    .footer__content {
+        .footer__content-image {
+            padding: 10px 0px;
+         img {
+             width: 100%;
+         }
+        }
+    }
+    .footer__content-icon {
+        cursor: pointer;
+        img {
+            margin-right: 2px;
+        }
+    }
+    .footer__content-icon:hover {
+        opacity: 0.5;
+    }
+    .footer__content-icon:active {
+        filter:brightness(30%);
+    }
+    hr {
+        color: white;
+    }
+    .footer__copyright {
+        text-align: center;
+        padding: 10px 0px;
+    }
+}

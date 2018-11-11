@@ -1,5 +1,6 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { IMAGE } from '../shared/image.constants';
+import { LANGS } from '../shared/language.constants';
 
 @Component({
   selector: 'app-header',
@@ -7,17 +8,18 @@ import { IMAGE } from '../shared/image.constants';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
+  @Output('currentLanguage') _currentLanguage: EventEmitter<any> = new EventEmitter();
   @Input() language: any;
+  languageImg = IMAGE.ENGLISH;
   logo = IMAGE.LOGO;
-  langs = [
-    { id: 'en', value: 'English' },
-    { id: 'jp', value: 'Japanese' },
-  ];
+  langs = LANGS;
   constructor() { }
 
   ngOnInit() {
-   console.log(' this.language;',  this.language);
-   
   }
-
-}
+  languageChange(event) {
+    const currentLang = this.langs.filter(el => el.id === event.target.value);
+    this.languageImg = currentLang[0].img;
+    this._currentLanguage.emit(event.target.value);
+  }
+ }

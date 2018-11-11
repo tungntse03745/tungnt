@@ -1,6 +1,6 @@
 <div class="app">
   <div class="app__header">
-   <app-header [language]= "language"></app-header>
+   <app-header [language]= "language" (currentLanguage)="currentLanguage($event)"></app-header>
   </div>
   <div class="app__content" flexLayout="row">
       <div class="app__content-main" fxFlex ="75">

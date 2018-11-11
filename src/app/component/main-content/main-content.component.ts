@@ -34,8 +34,6 @@ export class MainContentComponent implements OnInit {
     this.imageId = event.id - 1;
   };
   onmoveFn(event) {
-    console.log('xx', event);
-    
     this._currentSlide.emit(event.currentSlide)
   }
 }
