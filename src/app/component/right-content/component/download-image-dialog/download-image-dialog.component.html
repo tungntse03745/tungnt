@@ -1,3 +1,12 @@
-
-<img src="{{url}}" alt="" width="100%">
-<a href="{{url}}" download>download</a>
+<div class="download-image-dialog">
+  <div class="download-image-dialog__header">
+    <span>{{data.language.PREVIEW}}</span>
+  </div>
+  <div class="download-image-dialog__content">
+    <img src="{{url}}" alt="" width="100%">
+  </div>
+  <div class="download-image-dialog__footer">
+    <a (click)="onPressClose()">{{data.language.CLOSE}}</a>
+    <a href="{{url}}" download>{{data.language.FREE_DOWNLOAD}}</a>
+  </div>
+</div>

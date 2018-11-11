@@ -1,4 +1,4 @@
-import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter, Input } from '@angular/core';
 import { NgxCarousel } from 'ngx-carousel';
 import { IMAGE } from '../shared/image.constants';
 import { SLIDES } from '../shared/slides.constants';
@@ -10,6 +10,7 @@ import { SLIDES } from '../shared/slides.constants';
 })
 export class MainContentComponent implements OnInit {
   @Output('currentSlide') _currentSlide: EventEmitter<any> = new EventEmitter();
+  @Input() language: any;
   slides = SLIDES;
   imageId: number;
   image_icon = IMAGE;

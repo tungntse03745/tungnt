@@ -1,33 +1,42 @@
 <div class="footer">
   <div class="footer__content" flexLayout="row wrap" fxLayoutAlign="center center">
-    <div class="footer__content-image" fxFlex="5">
+    <div class="footer__content-space" fxFlex fxGrow="0.5"></div>
+    <div class="footer__content-image" fxFlex="5" fxFlex.xs="15">
       <img src="../assets/image/logo_footer.png" alt="">
     </div>
     <div fxFlex fxGrow="1"></div>
-    <div fxFlex="15" class="footer__content-icon" flexLayout="row" fxLayoutAlign="center center">
-      <img src="{{image.FACEBOOK}}" alt="">
-      <span>Facebook</span>
-    </div>
-    <div fxFlex="15" class="footer__content-icon" flexLayout="row" fxLayoutAlign="center center">
-      <img src="{{image.GIT}}" alt="">
-      <span>Github</span>
-    </div>
-    <div fxFlex="15" class="footer__content-icon" flexLayout="row" fxLayoutAlign="center center">
-      <img src="{{image.YOUTUBE}}" alt="">
-      <span>Youtube</span>
-    </div>
-    <div fxFlex="15" class="footer__content-icon" flexLayout="row" fxLayoutAlign="center center">
-      <img src="{{image.LINKEDIN}}" alt="">
-      <span>LinkedIn</span>
-    </div>
-    <div fxFlex="15" class="footer__content-icon" flexLayout="row" fxLayoutAlign="center center">
-      <img src="{{image.REDDIT}}" alt="">
-      <span>Reddit</span>
-    </div>
-    <div fxFlex="15" class="footer__content-icon" flexLayout="row" fxLayoutAlign="center center">
-      <img src="{{image.TWITTER}}" alt="">
-      <span>Twitter</span>
-    </div>
+      <div class= "footer__content-btn">
+          <div flexLayout="row" fxLayoutAlign="center center">
+              <div fxFlex="90px" class="footer__content-icon" fxLayoutAlign="center center">
+                <img src="{{image.FACEBOOK}}" alt="">
+                <span>Facebook</span>
+              </div>
+              <div fxFlex="90px" class="footer__content-icon" fxLayoutAlign="center center">
+                <img src="{{image.GIT}}" alt="">
+                <span>Github</span>
+              </div>
+              <div fxFlex="90px" class="footer__content-icon" fxLayoutAlign="center center">
+                <img src="{{image.YOUTUBE}}" alt="">
+                <span>Youtube</span>
+              </div>
+            </div>
+            <div flexLayout="row" fxLayoutAlign="center center">
+              <div fxFlex="90px" class="footer__content-icon" fxLayoutAlign="center center">
+                <img src="{{image.LINKEDIN}}" alt="">
+                <span>LinkedIn</span>
+              </div>
+              <div fxFlex="90px" class="footer__content-icon" fxLayoutAlign="center center">
+                <img src="{{image.REDDIT}}" alt="">
+                <span>Reddit</span>
+              </div>
+              <div fxFlex="90px" class="footer__content-icon" fxLayoutAlign="center center">
+                <img src="{{image.TWITTER}}" alt="">
+                <span>Twitter</span>
+              </div>
+            </div>
+      </div>
+    <div fxFlex fxGrow="1"></div>
+
   </div>
   <hr>
   <div class="footer__copyright">

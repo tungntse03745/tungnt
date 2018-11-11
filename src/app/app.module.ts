@@ -16,6 +16,7 @@ import { DownloadImageDialogComponent } from './component/right-content/componen
 import {NoopAnimationsModule} from '@angular/platform-browser/animations';
 import {MatRadioModule} from '@angular/material/radio';
 import {MatCheckboxModule} from '@angular/material/checkbox';
+import {MatMenuModule} from '@angular/material/menu';
 
 const COMPONENT = [
   HeaderComponent,
@@ -33,7 +34,8 @@ const MODULE = [
   MatDialogModule,
   NoopAnimationsModule,
   MatRadioModule,
-  MatCheckboxModule
+  MatCheckboxModule,
+  MatMenuModule
 ]
 @NgModule({
   declarations: [

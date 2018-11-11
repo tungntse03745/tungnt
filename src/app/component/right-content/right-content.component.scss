@@ -74,7 +74,7 @@
     }
     .right-content__description {
         background: #ffff;
-        padding: 10px;
+        // padding: 10px;
         .right-content__description-title {
             border-right: 1px solid gray;
             img {
@@ -82,9 +82,42 @@
             }
         }
         .right-content__description-content {
-            margin-left: 10px;
+            margin-left: 2px;
         }
     }
   
 
 }
+
+@media only screen and (max-width: 768px) {
+    .right-content {
+        font-size: 9px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        .right-content__action {
+        margin: 10px 0px;
+            
+        }
+        .right-content__download {
+            padding: 10px 0px;
+        }
+    }
+ }
+ @media only screen and (max-width: 1279px) {
+    .right-content {
+        font-size: 9px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        .right-content__action {
+        margin: 10px 0px;
+            
+        }
+        .right-content__download {
+            padding: 10px 0px;
+        }
+    }
+ }

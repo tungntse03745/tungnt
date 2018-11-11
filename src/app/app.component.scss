@@ -8,6 +8,7 @@
     }
     .app__content {
         width: 100%;
+        flex-wrap: wrap;
         background-color: #f2f3f4;
         .app__content-main {
             background-color: #ffff;
@@ -16,6 +17,15 @@
         }
         .app__content-right {
             width: 100%;
+            position: fixed;
+            right: 0px;
+        }
+        @media only screen and (max-width: 768px) {
+           .app__content-right {
+            position: relative;
+               
+            // display: none;
+           }
         }
     }
     .app__footer {

@@ -1,5 +1,7 @@
+
 <div class="main-content" flexLayout="row" fxLayoutAlign="center center">
-  <div class="main-content__left" fxFlex="13" flexLayout="column">
+  <div class="main-content__left" fxFlex="13" fxFlex.xs="20" fxFlex.sm="23" flexLayout="column">
+      <span>{{slides.length}}</span> <span> {{language.FILE_SET}}</span>
     <div *ngFor = "let slide of slides" class="main-content__left__image">
       <img src="{{slide.src}}" alt="" (click)="onPressImage(slide)">
     </div>

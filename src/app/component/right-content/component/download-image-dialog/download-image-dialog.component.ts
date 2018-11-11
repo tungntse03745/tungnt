@@ -15,5 +15,7 @@ export class DownloadImageDialogComponent implements OnInit {
   ngOnInit() {
     this.url = SLIDES[this.data.currentSlide].src;
   }
-
+  onPressClose() {
+    this.dialogRef.close();
+  }
 }

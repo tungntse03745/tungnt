@@ -1,0 +1,24 @@
+.download-image-dialog {
+    .download-image-dialog__header {
+        margin-bottom: 5px;
+    }
+    .download-image-dialog__footer {
+        margin-top: 10px;
+        float: right;
+        a {
+           background-color: #fda737;
+            padding: 5px;
+            margin: 10px 5px;
+            border-radius: 2px;
+            text-decoration: none;
+            cursor: pointer;
+            color: #fff;
+        }
+        a:hover {
+          opacity: 0.5;
+         }
+         a:active {
+             filter: brightness(30%);
+         }
+    }
+}

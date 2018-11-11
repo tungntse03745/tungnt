@@ -3,9 +3,27 @@
         margin: 0px 0px 0px 0px;
         .header__logo-img {
             width: 100%;
+            cursor: pointer;
+        }
+        .header__logo-img:active {
+          filter:brightness(30%);
         }
     }
     .header__menu {
+        .header__menu--toggle {
+            display: none;
+        }
+        @media only screen and (max-width: 768px) {
+         
+            .header__menu--toggle {
+              display: initial;
+            }
+            .header__menu-content{
+                a {
+                    display: none;
+                }
+            }
+        }
         .header__menu-content{
             a {
                 padding: 5px 5px;

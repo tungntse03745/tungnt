@@ -11,6 +11,7 @@ import { IMAGE } from '../shared/image.constants';
 export class RightContentComponent implements OnInit {
   current: any;
   image = IMAGE;
+  @Input() language: any;
   private _currentSlide: any;
   @Input()
   public get currentSlides(): any {
@@ -30,7 +31,7 @@ export class RightContentComponent implements OnInit {
     let dialogRef = this.dialog.open(DownloadImageDialogComponent, {
       width: '500px',
       height: 'auto',
-      data: { currentSlide: this.current || 0}
+      data: { currentSlide: this.current || 0, language: this.language}
     });
   }
 }

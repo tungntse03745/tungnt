@@ -1,11 +1,18 @@
 .main-content {
     .main-content__left {
+        text-align: center;
         padding: 10px;
         .main-content__left__image {
             img {
                 width: 100%;
                 margin: 3px 0px;
                 cursor: pointer;
+                padding: 4px;
+                line-height: 1.42857143;
+                background-color: #fff;
+                border: 1px solid #ddd;
+                border-radius: 4px;
+                transition: border .2s ease-in-out;
             }
             img:hover {
                 opacity: 0.5;
@@ -55,3 +62,8 @@
  .rightRs:active {
    filter: brightness(30%);
 }
+@media only screen and (max-width: 768px) {
+    .main-content {
+        font-size: 9px;
+    }
+ }

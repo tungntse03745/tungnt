@@ -1,7 +1,7 @@
 <div class="right-content">
   <div class="right-content__download" (click)="onPressDownload()" flexLayout="row" fxLayoutAlign="center center">
     <img src="{{image.DOWNLOAD}}" alt="" fxFlex="15px">
-    <div>Free Download</div>
+    <div>{{language.FREE_DOWNLOAD}}</div>
   </div>
   <div class="right-content__option" flexLayout="row" fxLayoutAlign="center center">
     <mat-radio-button></mat-radio-button>
@@ -9,7 +9,7 @@
     <span class="right-content__option-btn">PNG</span>
     <span class="right-content__option-btn">JPEG</span>
     <span>33MB</span>
-    <span class="right-content__option-btn-free">FREE</span>
+    <span class="right-content__option-btn-free">{{language.FREE}}</span>
   </div>
   <div class="right-content__action" flexLayout="row" fxLayoutAlign="center center">
     <div fxFlex="48" class="right-content__action-favourite">
@@ -22,14 +22,14 @@
   </div>
   <div class="right-content__description" flexLayout="row" fxLayoutAlign="center center">
     <div class="right-content__description-title" fxFlex="40" flexLayout="row" fxLayoutAlign="center center">
-     <img src="{{image.PROFILE}}" alt=""> License
+     <img src="{{image.PROFILE}}" alt=""> {{language.LICENSE}}
     </div>
     <div class="right-content__description-content" fxFlex="60" flexLayout="column">
       <div>
-        Free for commercial use
+        {{language.DESC1}}
       </div>
       <div>
-        No attribution required
+          {{language.DESC2}}
       </div>
     </div>
   </div>
