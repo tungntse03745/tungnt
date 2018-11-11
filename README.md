@@ -5,8 +5,9 @@ https://tungntse03745.github.io/tungnt/
 ## Step 1: 
 Setup angular (npm install -g @angular/cli)
 ## Step 2:
-Setup node_module (ng s)
-## Step 2:
+Setup node_module (npm install)
+## Step 3:
+Build (ng s)
 Goto http://localhost:4200/
 
 ## Deploy to github
